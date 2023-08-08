@@ -15,8 +15,8 @@ Hi Fellow Developers, Myself **_Deepanshu Jain_**
 3. Enter the command `npm install` on the terminal in the project directory, to install the required packages
 4. Create a new `.env` file in the project directory and provide environment variables. You can get the list of required environment variables from the `.env.example` file in the project root directory.
 5. Now enter the command `npm run dev` to start the server locally.
-   
-> Note - This project is live at  
+
+> Note: Using MongoDB atlas here, So the environment variables will require the MongoDB username, password and database name.
 
 # Features of this project
 1. Multiple User profiles, authentication, and authorization.
@@ -26,11 +26,9 @@ Hi Fellow Developers, Myself **_Deepanshu Jain_**
 5. Right now, `CORs` are set to allow everyone to access the server.
 6. The APIs in this project have proper validation for inputs using `express-validator` and proper error messages respectively.
 7. We are using `JWT tokens` for authentication and authorization.
-8. Implemented CI/CD pipeline for the `development` branch using `Jenkins` and `AWS Elastic Beanstalk`.
-9. This backend project is live on the development server -- <link>
 
 # Things that can be improved in this project
-1. A CI/CD pipeline and server for the production master/main branch.
+1. A CI/CD pipeline can be implemented.
 2. More flexibility and customization with blogs can be done.
 3. Each user can have its own dashboard, which will return its relevant details and stats.
 4.  More detailed error messages.
