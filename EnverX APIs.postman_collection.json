@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "906a18ba-00cc-4315-ab35-a1dc0e30e04b",
+		"name": "EnverX APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "24532707"
+	},
+	"item": [
+		{
+			"name": "SignUp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"DJ\",\r\n    \"email\": \"d@2.com\",\r\n    \"password\": \"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/users/signup"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/users/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Posts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/posts/"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Posts By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{url}}/posts/64d1b085c62d1439847715a5"
+			},
+			"response": []
+		},
+		{
+			"name": "Create a new blog/post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{authToken}}"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"My First post by d@1.com\",\r\n    \"description\": \"description of my my First post\",\r\n    \"category\": [\"new\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/posts"
+			},
+			"response": []
+		},
+		{
+			"name": "Update blog/post by Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{authToken}}"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"My First post by\",\r\n    \"description\": \"description of my my First post\",\r\n    \"category\": [\"first\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/posts/64d1b085c62d1439847715a5"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete blog/post by Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{authToken}}"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "{{url}}/posts/64d1b05b7f4e410bc8c022ad"
+			},
+			"response": []
+		}
+	]
+}
