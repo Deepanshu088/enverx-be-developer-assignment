@@ -16,7 +16,8 @@ Hi Fellow Developers, Myself **_Deepanshu Jain_**
 4. Create a new `.env` file in the project directory and provide environment variables. You can get the list of required environment variables from the `.env.example` file in the project root directory.
 5. Now enter the command `npm run dev` to start the server locally.
 
-> Note: Using MongoDB atlas here, So the environment variables will require the MongoDB username, password and database name.
+> Note: Using the MongoDB atlas here, the environment variables will require the MongoDB username, password, and database name.
+> Note: Added Postman Collection V2 export file for API testing (file is in the project root directory).
 
 # Features of this project
 1. Multiple User profiles, authentication, and authorization.
